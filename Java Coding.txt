@@ -1,0 +1,69 @@
+
+package question2;
+import java.util.Scanner;
+
+public class Question2 {
+
+    
+    public static void main(String[] args) {
+               
+        int hourin, minutein,hourout, minuteout, entry, exit, totalparkingtime;
+        float totalRounded,totalchargefee;
+
+          Scanner in=new Scanner(System.in);
+           String vType;
+           System.out.println("welcome to zackparking");
+           System.out.println(" ");
+           System.out.println("Please choose The Vehicle type");
+           System.out.println("C = Car");
+           System.out.println("B = Motorbike");
+           System.out.println("V = VAN");
+           vType = in.next();
+
+          System.out.println("hour enter in 0-24");
+          int hour1=in.nextInt();
+          System.out.println("minute enter in 0-60");
+          int minute1=in.nextInt();
+          System.out.println("hour out in 0-24");
+          int hour2=in.nextInt();
+          System.out.println("minute out in 0-60");
+          int minute2=in.nextInt();
+
+         int result = ((hour2*60)+minute2-(hour1*60)+minute1);
+
+         System.out.println("time in: "+"hour1"+"minute1");
+         System.out.println("time in: "+"hour2"+"minute2");
+         System.out.println("this the total parking time"+result);
+
+         if(result<=1)
+         {
+             System.out.println("your pay fee charge is rm 3");
+         }
+         else if(result<=2)
+         {
+             System.out.println("your pay fee charge is rm 4");
+         }
+         else if (result<=2)
+         {
+             System.out.println("your pay fee charge is rm 5");
+         }
+         else if (result<=3)
+         {
+             System.out.println("your pay fee charge is rm 6 ");
+         }
+         else if (result<=4)
+         {
+             System.out.println("your pay fee charge is rm 7");
+         }
+         else if (result <=5)
+         {
+             System.out.println("your pay fee charge is rm 8");
+
+           }
+
+
+       
+          
+    }
+    }
+
